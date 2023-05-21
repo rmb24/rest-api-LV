@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "rmb24",
   "license": "ISC",
   "dependencies": {
     "@types/mysql": "^2.15.21",
