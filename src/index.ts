@@ -12,12 +12,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+import * as ENV from "../config";
+
 // Routes
 app.use("/api", router);
 
 // Start server
-const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(ENV.PORT, () => {
+  console.log(`Server running on port ${ENV.PORT}`);
 });
