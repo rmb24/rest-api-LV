@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 
 import { PORT } from "../config";
 
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 // Routes
 app.use("/api", router);
 
