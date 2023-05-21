@@ -22,7 +22,7 @@ import {
 } from "../config";
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.send("Development by @rmb24 with ❤️");
 });
 // Routes
 app.use("/api", router);

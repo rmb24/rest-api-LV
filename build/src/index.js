@@ -15,7 +15,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 const config_1 = require("../config");
 app.get("/", (req, res) => {
-    res.send("Hello world");
+    res.send("Development by @rmb24 with ❤️");
 });
 // Routes
 app.use("/api", router_1.default);
