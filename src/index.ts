@@ -12,7 +12,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-import { PORT } from "../config";
+import {
+  PORT,
+  DB_HOST,
+  DB_USER,
+  DB_PASSWORD,
+  DB_NAME,
+  DB_PORT,
+} from "../config";
 
 app.get("/", (req, res) => {
   res.send("Hello world");
@@ -30,4 +37,5 @@ app.use((req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Database: ${DB_HOST}:${DB_PORT}/${DB_NAME}`);
 });
