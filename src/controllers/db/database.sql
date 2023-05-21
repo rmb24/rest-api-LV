@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `BDProductos` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `BDProductos`;
+
+CREATE TABLE TProducto(
+    codigo VARCHAR(10) NOT NULL UNIQUE,
+    nombre VARCHAR(20) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+)
+
+DESCRIBE TProducto;
