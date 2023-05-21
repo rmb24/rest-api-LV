@@ -7,6 +7,6 @@ exports.pool = (0, promise_1.createPool)({
     host: config_1.DB_HOST,
     user: config_1.DB_USER,
     password: config_1.DB_PASSWORD,
-    database: config_1.DB_NAME,
+    database: config_1.DB_DATABASE,
     port: config_1.DB_PORT,
 });

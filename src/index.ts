@@ -17,7 +17,7 @@ import {
   DB_HOST,
   DB_USER,
   DB_PASSWORD,
-  DB_NAME,
+  DB_DATABASE,
   DB_PORT,
 } from "../config";
 
@@ -37,5 +37,5 @@ app.use((req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`Database: ${DB_HOST}:${DB_PORT}/${DB_NAME}`);
+  console.log(`Database: ${DB_HOST}:${DB_PORT}/${DB_DATABASE}`);
 });

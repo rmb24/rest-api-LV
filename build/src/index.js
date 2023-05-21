@@ -28,5 +28,5 @@ app.use((req, res, next) => {
 // Start server
 app.listen(config_1.PORT, () => {
     console.log(`Server running on port ${config_1.PORT}`);
-    console.log(`Database: ${config_1.DB_HOST}:${config_1.DB_PORT}/${config_1.DB_NAME}`);
+    console.log(`Database: ${config_1.DB_HOST}:${config_1.DB_PORT}/${config_1.DB_DATABASE}`);
 });
