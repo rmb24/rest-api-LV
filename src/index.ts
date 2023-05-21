@@ -17,6 +17,12 @@ import { PORT } from "../config";
 // Routes
 app.use("/api", router);
 
+// Not found
+app.use((req, res) => {
+  res.status(404).json({
+    message: "Not found",
+  });
+});
 // Start server
 
 app.listen(PORT, () => {
